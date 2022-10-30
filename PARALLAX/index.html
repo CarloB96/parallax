@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Scrolling Website</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<link rel="stylesheet" href="css/styles.css">
+
+<body>
+  <header>
+    <a href="#" class="logo">Logo</a>
+    <ul class="navigation">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section class="parallax">
+    <h2 id="text">Parallax Website</h2>
+    <img src="images/monutain_01.png" id="m1">
+    <img src="images/trees_02.png" id="t2">
+    <img src="images/monutain_02.png" id="m2">
+    <img src="images/trees_01.png" id="t1">
+    <img src="images/man.png" id="man">
+    <img src="images/plants.png" id="plants">
+  </section>
+  <section class="sec">
+    <h2>Parallax Scrolling Website</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus augue, vehicula nec blandit quis, iaculis aliquam orci. Vestibulum fringilla accumsan orci eget ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac
+      habitasse platea dictumst. Etiam dignissim nibh a libero sagittis, quis blandit lorem mattis. Vivamus accumsan dictum lacus, in scelerisque sem interdum ut. Fusce fermentum odio in lacinia sodales. In est quam, malesuada et egestas pharetra,
+      ullamcorper sed ligula. Sed nec ultricies lorem. Curabitur augue elit, semper et pulvinar vel, volutpat non ligula. Nulla facilisi. Sed dapibus et diam eu mollis. In hendrerit enim eget scelerisque sodales. Nullam fringilla molestie metus
+      tincidunt iaculis. Vestibulum eget elementum dolor.<br><br> Pellentesque porttitor id mi eget tristique. Sed vitae ex nulla. Duis ac justo vestibulum, rhoncus nunc eu, pretium sem. Aenean gravida elit in sapien imperdiet lobortis. Mauris et
+      ante eros.
+      Maecenas semper porttitor nulla, a mattis ipsum. Cras facilisis imperdiet pulvinar. Duis iaculis, libero in porta rhoncus, arcu risus hendrerit nulla, a auctor purus odio id justo. Aenean blandit lectus id diam commodo, in convallis libero
+      convallis. Mauris dignissim libero nibh, finibus dictum diam suscipit vitae. Vivamus porta libero et ultrices tristique. Aliquam iaculis ut velit vitae vulputate. Suspendisse auctor rhoncus arcu non venenatis. Nunc ac enim enim. Morbi risus
+      lectus,
+      dapibus accumsan felis non, egestas finibus neque. <br><br>Duis id ligula id ante interdum ullamcorper. Phasellus sapien leo, laoreet elementum imperdiet vitae, sagittis at est. Duis vel lacus porttitor, lobortis nibh eget, eleifend turpis.
+      Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Quisque velit nisi, sollicitudin non nisi a, ultrices pellentesque elit. Sed gravida ultricies nisi sed imperdiet. Etiam eget lectus quis tortor ornare elementum nec et nisi. Nullam non ultricies
+      quam. Sed nec interdum massa. Nunc sed blandit
+      tortor. Vivamus feugiat turpis nec quam vestibulum condimentum eu sit amet erat. Cras augue ex, iaculis non nisi efficitur, faucibus lobortis purus. Quisque eros nunc, dignissim accumsan tellus quis, auctor lobortis mi. Morbi id hendrerit ex.
+      Aliquam gravida iaculis erat, eget lobortis mi aliquam eu. Maecenas at eleifend arcu. In sodales venenatis tristique.Nulla non lectus justo. Nullam faucibus sapien et euismod lacinia. Nullam bibendum vitae sapien sit amet interdum. Sed interdum
+      mauris quam, eget lobortis risus suscipit nec. Nullam convallis sed felis quis scelerisque. Nullam vulputate volutpat auctor. Nam orci tortor, tincidunt sed scelerisque sed, posuere ac arcu. Morbi bibendum vitae lacus vel tincidunt. Curabitur
+      at blandit magna, quis varius leo. Ut iaculis dictum libero, vel tincidunt massa rutrum bibendum. Pellentesque id eros eros. Fusce quis fringilla felis. Mauris pretium maximus ex at feugiat. Sed placerat libero eu risus euismod dictum.</p>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.from("#m1", {
+      ScrollTrigger: {
+        scrub: true
+      },
+      y: 100,
+    })
+    gsap.from("#m2", {
+      ScrollTrigger: {
+        scrub: true
+      },
+      y: 50,
+    })
+    gsap.from("#t2", {
+      ScrollTrigger: {
+        scrub: true
+      },
+      x: -50,
+    })
+    gsap.from("#t1", {
+      ScrollTrigger: {
+        scrub: true
+      },
+      x: 50,
+    })
+    gsap.from("#man", {
+      ScrollTrigger: {
+        scrub: true
+      },
+      x: -250,
+    })
+    gsap.from("#plants", {
+      ScrollTrigger: {
+        scrub: true
+      },
+      x: -50,
+    })
+    gsap.from("#text", {
+      ScrollTrigger: {
+        scrub: true
+      },
+      x: 600,
+    })
+  </script>
+</body>
+
+</html>
